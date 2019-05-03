@@ -1,7 +1,11 @@
 
 pipeline {
-    agent {windows}
-    stages {
+agent {
+    node {
+        label 'windows'
+    }
+}
+stages {
         stage('Build') {
             steps {
                 sh 'echo "Hello World"'
