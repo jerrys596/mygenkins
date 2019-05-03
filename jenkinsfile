@@ -3,6 +3,7 @@ pipeline {
 agent {
     node {
         label 'windows'
+        customWorkspace 'C:\rmtjenkins'
     }
 }
 stages {
